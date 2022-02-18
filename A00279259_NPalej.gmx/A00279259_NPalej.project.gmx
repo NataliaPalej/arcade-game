@@ -6,20 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprites name="main_character">
-      <sprite>sprites\Lilly_dead</sprite>
-      <sprite>sprites\Lilly_standing</sprite>
-      <sprite>sprites\Lilly_jumpRight</sprite>
-      <sprite>sprites\Lilly_jumpLeft</sprite>
-      <sprite>sprites\Lilly_meeleRight</sprite>
-      <sprite>sprites\Lilly_meeleLeft</sprite>
-      <sprite>sprites\Lilly_runRight</sprite>
-      <sprite>sprites\Lilly_runLeft</sprite>
-      <sprite>sprites\Lilly_shootRight</sprite>
-      <sprite>sprites\Lilly_shootLeft</sprite>
-      <sprite>sprites\Lilly_slideRight</sprite>
-      <sprite>sprites\Lilly_slideLeft</sprite>
-    </sprites>
     <sprites name="weapons">
       <sprite>sprites\sprite_bullet</sprite>
     </sprites>
@@ -29,20 +15,35 @@
       <sprite>sprites\sprite_block16</sprite>
       <sprite>sprites\sprite_block8</sprite>
     </sprites>
-    <sprites name="other">
-      <sprite>sprites\sprite_sign</sprite>
-      <sprite>sprites\sprite_signZombie</sprite>
-      <sprite>sprites\sprite_signEnemy</sprite>
+    <sprites name="npc">
+      <sprite>sprites\sprite_mag</sprite>
+      <sprite>sprites\sprite_cook</sprite>
+    </sprites>
+    <sprites name="main_character">
+      <sprite>sprites\sprite_player</sprite>
+      <sprite>sprites\sprite_playerRight</sprite>
+      <sprite>sprites\sprite_playerUp</sprite>
+      <sprite>sprites\sprite_playerLeft</sprite>
+      <sprite>sprites\sprite_playerDown</sprite>
+    </sprites>
+    <sprites name="enemies">
+      <sprite>sprites\sprite_demon</sprite>
+      <sprite>sprites\sprite_demonWalkDown</sprite>
+      <sprite>sprites\sprite_demonWalkRight</sprite>
+      <sprite>sprites\sprite_demonWalkLeft</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\playerAnimation_script.gml</script>
+  </scripts>
   <objects name="objects">
     <objects name="weapons">
       <object>objects\object_bullet</object>
     </objects>
-    <objects name="Lilly">
-      <object>objects\object_Lilly</object>
+    <objects name="player">
+      <object>objects\object_player</object>
     </objects>
     <objects name="blocks">
       <object>objects\object_parent_block</object>
@@ -51,9 +52,9 @@
       <object>objects\object_block16</object>
       <object>objects\object_block8</object>
     </objects>
-    <objects name="signs">
-      <object>objects\object_signZombie</object>
-      <object>objects\object_signEnemy</object>
+    <objects name="npc">
+      <object>objects\object_cook</object>
+      <object>objects\object_mag</object>
     </objects>
   </objects>
   <rooms name="rooms">

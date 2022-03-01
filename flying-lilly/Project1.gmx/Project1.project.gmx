@@ -4,12 +4,23 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sound_main</sound>
+    <sound>sound\sound_gameOver</sound>
+    <sound>sound\sound_bird</sound>
+    <sound>sound\sound_pickUp</sound>
+    <sound>sound\sound_negPickUp</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite_playerStanding</sprite>
     <sprite>sprites\sprite_playerMoving</sprite>
     <sprite>sprites\sprite_grass</sprite>
     <sprite>sprites\sprite_explosion</sprite>
+    <sprite>sprites\sprite_pipeTop</sprite>
+    <sprite>sprites\sprite_pipeBottom</sprite>
+    <sprite>sprites\sprite_point</sprite>
+    <sprite>sprites\sprite_score</sprite>
+    <sprite>sprites\sprite_coin</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -19,11 +30,22 @@
     <objects name="player">
       <object>objects\object_player</object>
     </objects>
-    <object>objects\object_grass</object>
     <object>objects\object_explosion</object>
+    <object>objects\object_point</object>
+    <object>objects\object_coin</object>
+    <objects name="controller">
+      <object>objects\object_controller</object>
+      <object>objects\object_highscore</object>
+    </objects>
+    <objects name="blocks">
+      <object>objects\object_pipeBottom</object>
+      <object>objects\object_pipeTop</object>
+      <object>objects\object_grass</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room_tesr</room>
+    <room>rooms\room1</room>
+    <room>rooms\room_main</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

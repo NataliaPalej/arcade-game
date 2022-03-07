@@ -10,17 +10,44 @@
     <sound>sound\sound_bird</sound>
     <sound>sound\sound_pickUp</sound>
     <sound>sound\sound_negPickUp</sound>
+    <sound>sound\sound_portal</sound>
+    <sound>sound\sound_gunShoot</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\sprite_playerStanding</sprite>
-    <sprite>sprites\sprite_playerMoving</sprite>
-    <sprite>sprites\sprite_grass</sprite>
-    <sprite>sprites\sprite_explosion</sprite>
-    <sprite>sprites\sprite_pipeTop</sprite>
-    <sprite>sprites\sprite_pipeBottom</sprite>
-    <sprite>sprites\sprite_point</sprite>
-    <sprite>sprites\sprite_score</sprite>
     <sprite>sprites\sprite_coin</sprite>
+    <sprites name="enemies">
+      <sprite>sprites\sprite_dizzy</sprite>
+      <sprite>sprites\sprite_dizzy2</sprite>
+      <sprite>sprites\sprite_shooting</sprite>
+      <sprite>sprites\sprite_flying</sprite>
+      <sprite>sprites\sprite_fatFly</sprite>
+      <sprite>sprites\sprite_fatShoot</sprite>
+      <sprite>sprites\sprite_boss</sprite>
+    </sprites>
+    <sprites name="bullet">
+      <sprite>sprites\sprite_bullet</sprite>
+      <sprite>sprites\sprite_enemyBullet</sprite>
+    </sprites>
+    <sprites name="player">
+      <sprite>sprites\sprite_playerMoving</sprite>
+      <sprite>sprites\sprite_playerStanding</sprite>
+    </sprites>
+    <sprites name="blocks">
+      <sprite>sprites\sprite_pipeBottom</sprite>
+      <sprite>sprites\sprite_pipeTop</sprite>
+      <sprite>sprites\sprite_score</sprite>
+      <sprite>sprites\sprite_grass</sprite>
+      <sprite>sprites\sprite_point</sprite>
+      <sprite>sprites\sprite_portal</sprite>
+    </sprites>
+    <sprites name="explosions">
+      <sprite>sprites\sprite_explosion</sprite>
+      <sprite>sprites\sprite_explosionBoss</sprite>
+      <sprite>sprites\sprite_explosionBoss2</sprite>
+      <sprite>sprites\sprite_explosionBoss3</sprite>
+      <sprite>sprites\sprite_explosionBoss4</sprite>
+      <sprite>sprites\sprite_explosionBoss5</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -29,23 +56,40 @@
   <objects name="objects">
     <objects name="player">
       <object>objects\object_player</object>
+      <object>objects\object_playerShooting</object>
+      <object>objects\object_bullet</object>
     </objects>
     <object>objects\object_explosion</object>
-    <object>objects\object_point</object>
     <object>objects\object_coin</object>
     <objects name="controller">
       <object>objects\object_controller</object>
       <object>objects\object_highscore</object>
     </objects>
     <objects name="blocks">
+      <object>objects\object_point</object>
       <object>objects\object_pipeBottom</object>
       <object>objects\object_pipeTop</object>
       <object>objects\object_grass</object>
     </objects>
+    <object>objects\object_portal</object>
+    <objects name="enemies">
+      <object>objects\object_enemy</object>
+      <object>objects\object_dizzy</object>
+      <object>objects\object_dizzy2</object>
+      <object>objects\object_shooting</object>
+      <object>objects\object_flying</object>
+      <object>objects\object_fatFly</object>
+      <object>objects\object_boss</object>
+      <object>objects\object_enemyBullet</object>
+    </objects>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\timeline_NegativeLevel</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\room1</room>
     <room>rooms\room_main</room>
+    <room>rooms\room_enemies</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

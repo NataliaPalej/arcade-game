@@ -31,6 +31,11 @@
     <sprites name="player">
       <sprite>sprites\sprite_playerMoving</sprite>
       <sprite>sprites\sprite_playerStanding</sprite>
+      <sprites name="color_change">
+        <sprite>sprites\sprite_red</sprite>
+        <sprite>sprites\sprite_green</sprite>
+        <sprite>sprites\sprite_pink</sprite>
+      </sprites>
     </sprites>
     <sprites name="blocks">
       <sprite>sprites\sprite_pipeBottom</sprite>
@@ -48,6 +53,10 @@
       <sprite>sprites\sprite_explosionBoss4</sprite>
       <sprite>sprites\sprite_explosionBoss5</sprite>
     </sprites>
+    <sprites name="pickup">
+      <sprite>sprites\sprite_life</sprite>
+      <sprite>sprites\sprite_extras</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -58,12 +67,18 @@
       <object>objects\object_player</object>
       <object>objects\object_playerShooting</object>
       <object>objects\object_bullet</object>
+      <objects name="colors">
+        <object>objects\player_red</object>
+        <object>objects\player_green</object>
+        <object>objects\player_pink</object>
+      </objects>
     </objects>
     <object>objects\object_explosion</object>
     <object>objects\object_coin</object>
     <objects name="controller">
       <object>objects\object_controller</object>
       <object>objects\object_highscore</object>
+      <object>objects\object_enemiesRoom</object>
     </objects>
     <objects name="blocks">
       <object>objects\object_point</object>
@@ -85,6 +100,7 @@
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_NegativeLevel</timeline>
+    <timeline>timelines\timeline_portals</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\room1</room>

@@ -60,44 +60,21 @@ spread = 180;
 //pick random number between 0-300, add 150
 position = random(300) + spread;
 
+//pick random number for portals and coins
+position2 = random(100) + spread;
+
 //create pipes at random locations
 instance_create(room_width, position - spread/2, object_pipeTop);
 instance_create(room_width, position + spread/2, object_pipeBottom);
+
 //create score spot
 instance_create(room_width, position, object_point);
+
 //create pickup coin randomly
-instance_create(room_width, position, object_coin);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_set_color(c_white);
-draw_set_font(global.gameFont)
+instance_create(room_width, position2, object_coin);
 
-draw_set_halign(fa_center);
-
-//Draw high score
-draw_text(room_width / 2, 10, string(global.highscore));
-
-draw_text(room_width / 2, 60, string(points));
+//create random negative lvl portal
+instance_create(room_width, position2, object_portal);
 </string>
           </argument>
         </arguments>

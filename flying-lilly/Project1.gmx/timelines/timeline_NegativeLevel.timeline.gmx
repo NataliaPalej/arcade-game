@@ -430,32 +430,4 @@
       </action>
     </event>
   </entry>
-  <entry>
-    <step>600</step>
-    <event/>
-  </entry>
-  <entry>
-    <step>800</step>
-    <event/>
-  </entry>
-  <entry>
-    <step>1000</step>
-    <event/>
-  </entry>
-  <entry>
-    <step>1200</step>
-    <event/>
-  </entry>
-  <entry>
-    <step>1400</step>
-    <event/>
-  </entry>
-  <entry>
-    <step>1600</step>
-    <event/>
-  </entry>
-  <entry>
-    <step>2000</step>
-    <event/>
-  </entry>
 </timeline>

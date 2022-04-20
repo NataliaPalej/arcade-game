@@ -59,11 +59,11 @@
       <object>objects\object_playerShooting</object>
       <object>objects\object_bullet</object>
     </objects>
-    <object>objects\object_explosion</object>
     <object>objects\object_coin</object>
     <objects name="controller">
       <object>objects\object_controller</object>
       <object>objects\object_highscore</object>
+      <object>objects\object_dead</object>
     </objects>
     <objects name="blocks">
       <object>objects\object_point</object>
@@ -82,10 +82,18 @@
       <object>objects\object_boss</object>
       <object>objects\object_enemyBullet</object>
     </objects>
-    <object>objects\object_dead</object>
+    <objects name="explosions">
+      <object>objects\object_explosion</object>
+      <object>objects\explosion1</object>
+      <object>objects\explosion2</object>
+      <object>objects\explosion3</object>
+      <object>objects\explosion4</object>
+      <object>objects\explosion5</object>
+    </objects>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_NegativeLevel</timeline>
+    <timeline>timelines\timeline_coins</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\room1</room>

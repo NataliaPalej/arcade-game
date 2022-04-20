@@ -52,11 +52,6 @@
     {
         instance_destroy();
     }
-    
-if (object_player.dead == 1)
-    {
-        hspeed = 0;
-    }
 </string>
           </argument>
         </arguments>

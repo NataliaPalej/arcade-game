@@ -82,6 +82,7 @@
       <object>objects\object_boss</object>
       <object>objects\object_enemyBullet</object>
     </objects>
+    <object>objects\object_dead</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_NegativeLevel</timeline>

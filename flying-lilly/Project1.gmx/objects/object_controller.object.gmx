@@ -25,12 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>points = 0;
+            <string>global.points = 0;
 //create font from sprite, start at 0 and have -1px between each
 global.gameFont = font_add_sprite(sprite_score, ord("0"), true, -1)
 
 room_speed = 30;
 timer = room_speed*10;
+portal = room_speed*1;
 </string>
           </argument>
         </arguments>
@@ -97,12 +98,45 @@ spread = 180;
 position = random(300) + spread;
 
 timer -= 1;
-
 if(timer == 0)
 {
     instance_create(room_width, position, object_coin);
     hspeed = -6;
     timer = room_speed*5;;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var position;
+var spread;
+
+spread = 180;
+position = random(300) + spread;
+
+portal -= 1;
+
+if(portal == 0)
+{
+    instance_create(room_width, position, object_portal);
+    hspeed = -6;
+    portal = room_speed*5;;
 }
 </string>
           </argument>
@@ -135,7 +169,12 @@ draw_set_halign(fa_center);
 draw_text(room_width / 2, 10, string(global.highscore));
 
 //Draw points
-draw_text(room_width / 2, 60, string(points));
+draw_text(room_width / 2, 60, string(global.points));
+
+//Extra points
+draw_set_color(c_black);
+draw_set_font(extra_points)
+draw_text(10, 10, string(global.extrapoints));
 </string>
           </argument>
         </arguments>

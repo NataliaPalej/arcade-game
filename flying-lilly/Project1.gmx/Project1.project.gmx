@@ -29,13 +29,13 @@
       <sprite>sprites\sprite_enemyBullet</sprite>
     </sprites>
     <sprites name="player">
-      <sprite>sprites\sprite_playerMoving</sprite>
-      <sprite>sprites\sprite_playerStanding</sprite>
+      <sprite>sprites\sprite_player</sprite>
     </sprites>
     <sprites name="blocks">
       <sprite>sprites\sprite_pipeBottom</sprite>
       <sprite>sprites\sprite_pipeTop</sprite>
       <sprite>sprites\sprite_score</sprite>
+      <sprite>sprites\sprite_extraScore</sprite>
       <sprite>sprites\sprite_grass</sprite>
       <sprite>sprites\sprite_point</sprite>
       <sprite>sprites\sprite_portal</sprite>
@@ -53,16 +53,19 @@
     <background>background\background</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\extra_points</font>
+  </fonts>
   <objects name="objects">
     <objects name="player">
       <object>objects\object_player</object>
-      <object>objects\object_playerShooting</object>
+      <object>objects\object_player_shoot</object>
       <object>objects\object_bullet</object>
     </objects>
-    <object>objects\object_coin</object>
     <objects name="controller">
-      <object>objects\object_controller</object>
       <object>objects\object_highscore</object>
+      <object>objects\object_controller</object>
+      <object>objects\controller_shooting_player</object>
       <object>objects\object_dead</object>
     </objects>
     <objects name="blocks">
@@ -70,8 +73,9 @@
       <object>objects\object_pipeBottom</object>
       <object>objects\object_pipeTop</object>
       <object>objects\object_grass</object>
+      <object>objects\object_coin</object>
+      <object>objects\object_portal</object>
     </objects>
-    <object>objects\object_portal</object>
     <objects name="enemies">
       <object>objects\object_enemy</object>
       <object>objects\object_dizzy</object>
@@ -81,6 +85,7 @@
       <object>objects\object_fatFly</object>
       <object>objects\object_boss</object>
       <object>objects\object_enemyBullet</object>
+      <object>objects\object_aim</object>
     </objects>
     <objects name="explosions">
       <object>objects\object_explosion</object>
@@ -92,8 +97,7 @@
     </objects>
   </objects>
   <timelines name="timelines">
-    <timeline>timelines\timeline_NegativeLevel</timeline>
-    <timeline>timelines\timeline_coins</timeline>
+    <timeline>timelines\timeline_raid</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\room1</room>

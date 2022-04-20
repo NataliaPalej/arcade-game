@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.points = 0;
-//create font from sprite, start at 0 and have -1px between each
+            <string>//create font from sprite, start at 0 and have -1px between each
 global.gameFont = font_add_sprite(sprite_score, ord("0"), true, -1)
 
 room_speed = 30;
@@ -172,9 +171,7 @@ draw_text(room_width / 2, 10, string(global.highscore));
 draw_text(room_width / 2, 60, string(global.points));
 
 //Extra points
-draw_set_color(c_black);
-draw_set_font(extra_points)
-draw_text(10, 10, string(global.extrapoints));
+draw_text(50, 10, string(global.extrapoints));
 </string>
           </argument>
         </arguments>

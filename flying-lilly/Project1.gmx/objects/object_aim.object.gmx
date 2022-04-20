@@ -259,13 +259,28 @@ You didn't survive bird's ride.
 
 dead = 1;
 background_hspeed[0] = 0;
-global.highscore = object_controller.points + global.extrapoints + global.points2;
+global.highscore = global.points + global.extrapoints;
+global.points = 0;
 instance_create(0, 0, object_dead);
 image_speed = 0;
 object_enemy.hspeed = 0;
 </string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>
@@ -290,20 +305,6 @@ object_enemy.hspeed = 0;
         <useapplyto>0</useapplyto>
         <exetype>0</exetype>
         <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>

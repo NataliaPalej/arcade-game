@@ -64,8 +64,8 @@
     </objects>
     <objects name="controller">
       <object>objects\object_highscore</object>
-      <object>objects\object_controller</object>
-      <object>objects\controller_shooting_player</object>
+      <object>objects\object_main_controller</object>
+      <object>objects\object_controller2</object>
       <object>objects\object_dead</object>
     </objects>
     <objects name="blocks">

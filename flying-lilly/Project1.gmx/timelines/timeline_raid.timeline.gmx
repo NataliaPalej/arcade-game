@@ -1726,9 +1726,7 @@ Space to shoot");
             <kind>1</kind>
             <string>show_message("Congratulations! 
 You managed to survive birds raid. 
-Now you can go back to main game.");
-
-global.points2 += global.extrapoints;
+Now you can go back to main game."); 
 </string>
           </argument>
         </arguments>

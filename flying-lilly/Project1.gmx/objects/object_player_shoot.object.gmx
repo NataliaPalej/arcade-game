@@ -205,9 +205,10 @@ You didn't survive bird's ride.
 :(");
 
 dead = 1;
-global.points2 = 0;
+
 background_hspeed[0] = 0;
-global.highscore = global.points2 + global.extrapoints;
+global.highscore = global.points + global.extrapoints;
+global.points = 0;
 instance_create(0, 0, object_dead);
 image_speed = 0;
 object_enemy.hspeed = 0;

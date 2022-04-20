@@ -64,9 +64,13 @@ draw_set_font(global.gameFont)
 draw_set_halign(fa_center);
 
 //Extra points
-draw_set_color(c_black);
-draw_set_font(extra_points)
-draw_text(30, 10, string(global.extrapoints));
+draw_text(50, 10, string(global.extrapoints));
+
+//Draw high score
+draw_text(room_width / 2, 10, string(global.highscore));
+
+//Draw points
+draw_text(room_width / 2, 60, string(global.points));
 </string>
           </argument>
         </arguments>

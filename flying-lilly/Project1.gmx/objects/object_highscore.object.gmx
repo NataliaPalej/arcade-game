@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>global.highscore = 0;
 global.extrapoints = 0;
+global.points = 0;
 room_goto_next();
 </string>
           </argument>

@@ -37,25 +37,37 @@
     <event eventtype="4" ename="object_bullet">
       <action>
         <libid>1</libid>
-        <id>202</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_change_object</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>10</kind>
-            <object>explosion5</object>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
+            <kind>1</kind>
+            <string>global.extrapoints += 1;
+
+//creating explosion array
+object[1] = explosion1;
+object[2] = explosion3;
+object[3] = explosion4;
+object[4] = explosion5;
+object[5] = explosion2;
+
+//pick random index
+var i = irandom_range(1,5);
+
+//create random array object
+instance_create(x, y, object[i]);
+//set speed to -9
+object[i].hspeed = -9;
+</string>
           </argument>
         </arguments>
       </action>
@@ -72,27 +84,6 @@
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>global.extrapoints += 1;
-</string>
-          </argument>
-        </arguments>
       </action>
     </event>
     <event eventtype="7" enumb="0">

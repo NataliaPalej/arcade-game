@@ -90,7 +90,8 @@ instance_create(room_width, position, object_point);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var position;
+            <string>//create coin
+var position;
 var spread;
 
 spread = 180;
@@ -123,7 +124,8 @@ if(timer == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var position;
+            <string>//create portal
+var position;
 var spread;
 
 spread = 180;

@@ -12,6 +12,9 @@
     <sound>sound\sound_negPickUp</sound>
     <sound>sound\sound_portal</sound>
     <sound>sound\sound_gunShoot</sound>
+    <sound>sound\sound_portal_lvl</sound>
+    <sound>sound\sound_score</sound>
+    <sound>sound\sound_gameOver2</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite_coin</sprite>
@@ -84,7 +87,6 @@
       <object>objects\object_flying</object>
       <object>objects\object_fatFly</object>
       <object>objects\object_boss</object>
-      <object>objects\object_enemyBullet</object>
       <object>objects\object_aim</object>
     </objects>
     <objects name="explosions">

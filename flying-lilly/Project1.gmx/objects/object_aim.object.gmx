@@ -135,7 +135,7 @@
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>sound_bird</sound>
+            <sound>sound_hit</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -263,7 +263,7 @@
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>sound_portal_lvl</sound>
+            <sound>enemy_music</sound>
           </argument>
         </arguments>
       </action>
@@ -283,7 +283,7 @@
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>sound_portal_lvl</sound>
+            <sound>enemy_music</sound>
           </argument>
         </arguments>
       </action>
@@ -303,7 +303,7 @@
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>sound_gameOver2</sound>
+            <sound>sound_gameover2</sound>
           </argument>
           <argument>
             <kind>3</kind>

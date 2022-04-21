@@ -257,7 +257,7 @@ instance_create(0, 0, object_dead);
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>sound_gameOver</sound>
+            <sound>sound_gameover</sound>
           </argument>
           <argument>
             <kind>3</kind>
@@ -455,7 +455,7 @@ instance_create(0, 0, object_dead);
         <arguments>
           <argument>
             <kind>6</kind>
-            <sound>sound_gameOver</sound>
+            <sound>sound_gameover</sound>
           </argument>
           <argument>
             <kind>3</kind>

@@ -5,16 +5,24 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sound_main</sound>
-    <sound>sound\sound_gameOver</sound>
-    <sound>sound\sound_bird</sound>
-    <sound>sound\sound_pickUp</sound>
-    <sound>sound\sound_negPickUp</sound>
-    <sound>sound\sound_portal</sound>
-    <sound>sound\sound_gunShoot</sound>
-    <sound>sound\sound_portal_lvl</sound>
-    <sound>sound\sound_score</sound>
-    <sound>sound\sound_gameOver2</sound>
+    <sounds name="sounds">
+      <sound>sound\sound_round_end</sound>
+      <sound>sound\sound_gunshoot</sound>
+      <sound>sound\sound_gameover</sound>
+      <sound>sound\sound_gameover2</sound>
+      <sound>sound\sound_score</sound>
+      <sound>sound\sound_portal</sound>
+      <sound>sound\sound_badpickup</sound>
+      <sound>sound\sound_hit</sound>
+      <sound>sound\sound_pickUp</sound>
+    </sounds>
+    <sounds name="music">
+      <sound>sound\main_music</sound>
+      <sound>sound\main_music2</sound>
+      <sound>sound\enemy_music</sound>
+      <sound>sound\enemy_music2</sound>
+      <sound>sound\main_music3</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite_coin</sprite>
@@ -51,9 +59,29 @@
       <sprite>sprites\sprite_explosionBoss4</sprite>
       <sprite>sprites\sprite_explosionBoss5</sprite>
     </sprites>
+    <sprites name="bonus">
+      <sprite>sprites\sprite_playerBonus</sprite>
+      <sprite>sprites\rock</sprite>
+      <sprite>sprites\rock2</sprite>
+      <sprite>sprites\rock3</sprite>
+      <sprite>sprites\rock4</sprite>
+      <sprite>sprites\fruit</sprite>
+      <sprite>sprites\fruit1</sprite>
+      <sprite>sprites\fruit2</sprite>
+      <sprite>sprites\fruit3</sprite>
+      <sprite>sprites\fruit4</sprite>
+      <sprite>sprites\fruit5</sprite>
+      <sprite>sprites\fruit6</sprite>
+      <sprite>sprites\cloud</sprite>
+      <sprite>sprites\coud2</sprite>
+      <sprite>sprites\cloud3</sprite>
+      <sprite>sprites\cloud4</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
+    <background>background\background1</background>
+    <background>background\background2</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -97,6 +125,26 @@
       <object>objects\explosion4</object>
       <object>objects\explosion5</object>
     </objects>
+    <objects name="bonus">
+      <object>objects\bonus_controller</object>
+      <object>objects\player</object>
+      <objects name="rocks">
+        <object>objects\main_rock</object>
+        <object>objects\rocks1</object>
+        <object>objects\rocks2</object>
+        <object>objects\rocks3</object>
+        <object>objects\rocks4</object>
+      </objects>
+      <objects name="fruits">
+        <object>objects\main_fruit</object>
+        <object>objects\fruits1</object>
+        <object>objects\fruits2</object>
+        <object>objects\fruits3</object>
+        <object>objects\fruits4</object>
+        <object>objects\fruits5</object>
+        <object>objects\fruits6</object>
+      </objects>
+    </objects>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_raid</timeline>
@@ -105,6 +153,7 @@
     <room>rooms\room1</room>
     <room>rooms\room_main</room>
     <room>rooms\room_enemies</room>
+    <room>rooms\bonus_lvl</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

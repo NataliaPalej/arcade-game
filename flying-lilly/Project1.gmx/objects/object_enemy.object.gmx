@@ -66,7 +66,7 @@ var i = irandom_range(1,5);
 //create random array object
 instance_create(x, y, object[i]);
 //set speed to -9
-object[i].hspeed = -9;
+object[i].hspeed = -13;
 </string>
           </argument>
         </arguments>

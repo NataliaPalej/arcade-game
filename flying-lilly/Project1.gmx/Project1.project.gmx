@@ -23,6 +23,11 @@
       <sound>sound\enemy_music2</sound>
       <sound>sound\main_music3</sound>
     </sounds>
+    <sounds name="bonus">
+      <sound>sound\fruit_pickup</sound>
+      <sound>sound\rock_hit</sound>
+      <sound>sound\main_bonus</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite_coin</sprite>
@@ -76,6 +81,7 @@
       <sprite>sprites\coud2</sprite>
       <sprite>sprites\cloud3</sprite>
       <sprite>sprites\cloud4</sprite>
+      <sprite>sprites\lives</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -106,6 +112,7 @@
       <object>objects\object_grass</object>
       <object>objects\object_coin</object>
       <object>objects\object_portal</object>
+      <object>objects\object_bonuslvl</object>
     </objects>
     <objects name="enemies">
       <object>objects\object_enemy</object>
@@ -127,7 +134,8 @@
     </objects>
     <objects name="bonus">
       <object>objects\bonus_controller</object>
-      <object>objects\player</object>
+      <object>objects\bonus_player</object>
+      <object>objects\live</object>
       <objects name="rocks">
         <object>objects\main_rock</object>
         <object>objects\rocks1</object>
@@ -144,10 +152,18 @@
         <object>objects\fruits5</object>
         <object>objects\fruits6</object>
       </objects>
+      <objects name="clouds">
+        <object>objects\main_cloud</object>
+        <object>objects\clouds1</object>
+        <object>objects\clouds2</object>
+        <object>objects\clouds3</object>
+        <object>objects\clouds4</object>
+      </objects>
     </objects>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_raid</timeline>
+    <timeline>timelines\timeline_bonus</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\room1</room>

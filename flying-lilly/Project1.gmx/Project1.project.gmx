@@ -163,7 +163,6 @@
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_raid</timeline>
-    <timeline>timelines\timeline_bonus</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\room1</room>

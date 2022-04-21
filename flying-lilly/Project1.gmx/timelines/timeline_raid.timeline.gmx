@@ -20,11 +20,8 @@
           <argument>
             <kind>1</kind>
             <string>show_message("Controls:
-Up arrow to move up 
-Down arrow to move down
-Left arrow to move left
-Right arrow to move right
-Space to shoot");
+Arrows: UP, DOWN, LEFT, RIGHT
+SPACE to shoot");
 </string>
           </argument>
         </arguments>

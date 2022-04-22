@@ -441,10 +441,10 @@ instance_create(0, 0, object_dead);
 object_grass.hspeed = 0;
 
 //stop moving background
-background_hspeed[0] = 0;
+background.hspeed[0] = 0;
 
 //stop moving bird sprite
-image_speed = 0;
+object_player.hspeed = 0;
 
 //Lilly dead
 dead = 1;

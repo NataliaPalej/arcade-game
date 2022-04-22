@@ -31,7 +31,7 @@ global.gameFont = font_add_sprite(sprite_score, ord("0"), true, -1)
 room_speed = 30;
 timer = room_speed*10;
 portal = room_speed*10;
-cloud_portal = room_speed*12;
+cloud_portal = room_speed*15;
 </string>
           </argument>
         </arguments>
@@ -414,7 +414,7 @@ if(portal == 0)
 {
     instance_create(room_width, position, object_portal);
     hspeed = -6;
-    portal = room_speed*8;;
+    portal = room_speed*10;;
 }
 </string>
           </argument>
@@ -449,7 +449,7 @@ if(cloud_portal == 0)
 {
     instance_create(room_width, position, object_bonuslvl);
     hspeed = -6;
-    cloud_portal = room_speed*11;;
+    cloud_portal = room_speed*15;;
 }
 </string>
           </argument>

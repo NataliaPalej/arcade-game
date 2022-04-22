@@ -83,11 +83,13 @@
       <sprite>sprites\cloud4</sprite>
       <sprite>sprites\lives</sprite>
     </sprites>
+    <sprite>sprites\sprite_playbutton</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
     <background>background\background1</background>
     <background>background\background2</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -160,12 +162,14 @@
         <object>objects\clouds4</object>
       </objects>
     </objects>
+    <object>objects\object_playbutton</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline_raid</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\room1</room>
+    <room>rooms\start_room</room>
     <room>rooms\room_main</room>
     <room>rooms\room_enemies</room>
     <room>rooms\bonus_lvl</room>

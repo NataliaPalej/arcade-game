@@ -392,7 +392,7 @@ depth = -1000;
           </argument>
           <argument>
             <kind>5</kind>
-            <sprite>lives</sprite>
+            <sprite>lives1</sprite>
           </argument>
         </arguments>
       </action>
